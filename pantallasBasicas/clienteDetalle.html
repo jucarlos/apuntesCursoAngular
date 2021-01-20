@@ -1,0 +1,86 @@
+<div class="card animate__animated animate__fadeIn animate__fast mt-3">
+    <div class="card-header">Clientes</div>
+  
+    <div class="row">
+      <div class="col-md-7">
+        <div class="card-body text-primary">
+          <form>
+            <div class="form-group">
+              <label for="identificador" class="col-form-label"
+                >Identificador</label
+              >
+              <div>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="identificador"
+                  id="inputIdentificador"
+                />
+              </div>
+            </div>
+  
+            <div class="form-group">
+              <label for="nombre" class="col-form-label">Nombre</label>
+              <div>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="nombre"
+                  id="inputNombre"
+                />
+              </div>
+            </div>
+  
+            <div class="form-group">
+              <label for="email" class="col-form-label">Email</label>
+              <div>
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  id="inputEmail"
+                />
+              </div>
+            </div>
+  
+            <div class="mt-2">
+                <button class="btn btn-primary">titulo del botón</button>
+    
+                <button class="btn btn-secondary">Cancelar</button>
+            </div>
+         
+          </form>
+        </div>
+      </div>
+  
+      <div class="col-md-5">
+        <div class="card-body" align="center">
+          <h4 class="card-title">Foto del cliente</h4>
+          <h6 class="card-subtitle"></h6>
+  
+          <img class="w150" />
+          <img class="w150" />
+  
+          <input type="file" />
+  
+          <br />
+          <br />
+  
+          <button
+            type="button"
+            class="btn btn-block btn-success waves-effect waves-light m-r-10"
+          >
+            <i class="fa fa-save"></i> Actualizar Foto
+          </button>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="card-body">
+        <h4 class="card-title">Sus vehículos</h4>
+        <app-vehiculos-cliente></app-vehiculos-cliente>
+      </div>
+    </div>
+  </div>
+  
