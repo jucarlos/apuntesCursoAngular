@@ -1,0 +1,68 @@
+<div class="card animate__animated animate__fadeIn animate__fast mt-3">
+
+
+    <div class="card-header">Clientes</div>
+        <div class="card-body text-primary">
+            <button 
+
+            class="btn btn-outline-primary">
+                Nuevo Cliente
+            </button>
+            <hr/>
+        <h5 class="card-title">Listado Clientes (<small> 8 </small>)</h5>
+
+        
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h6 class="card-title">Sistema de búsqueda, sólo para usuarios autenticados</h6>
+                
+                    <input [disabled]="false"
+                    
+                    name="termino"
+               
+                    type="text"
+                    class="form-control"
+                    placeholder="Buscar clientes..."
+                    />
+                
+          </div>
+        </div>
+      </div>
+
+        <table class="table table-striped table-bordered mt-2">
+            <thead>
+                <tr>
+                    <th >#</th>
+                    <th >Nombre</th>
+                    <th >Identificador</th>
+                    <th >email</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr >
+                    <td class="w40 align-middle">1</td>
+                    <td class="w150">Nombre del cliente</td>
+                    <td class="w100">Identificador</td>
+                    <td class="w150">email</td>
+                    <td class="w70 align-middle">
+                        <button 
+                        
+                        class="btn btn-outline-primary btn-sm me-2">
+                            <i class="fa fa-edit"></i>
+                        </button>
+                        <button 
+                        
+                        class="btn btn-outline-danger btn-sm">
+                            <i class="fa fa-trash"></i>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button  class="btn btn-secondary me-2">Anteriores</button>
+        <button  class="btn btn-secondary">Siguientes</button>
+     </div>
+
+</div>
