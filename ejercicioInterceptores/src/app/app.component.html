@@ -1,0 +1,27 @@
+
+
+<div class="container mt-3">
+  <h3>Paises de habla hispánica {{ paises.length }}</h3>
+  <hr>
+  <table *ngIf="paises.length > 0 "
+  class="table">
+    <thead>
+      <tr>
+        <th>Bandera</th>
+        <th>Pais</th>
+        <th>Capital</th>
+        <th>Idiomas</th>
+      </tr>
+    </thead>
+      <tbody>
+        <tr *ngFor="let pais of paises">
+          <td>
+            <img [src]="pais.flag" class="w150">
+          </td>
+          <td>{{ pais.name }} </td>
+          <td>{{ pais.capital }}</td>
+          <td>{{ pais.languages | lenguages}}</td>
+        </tr>
+      </tbody>
+    </table>
+</div>

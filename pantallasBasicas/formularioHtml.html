@@ -1,0 +1,135 @@
+<div class="animate__animated animate__fadeIn animate__fast">
+    <div class="row mt-3">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header">Formularios en HTML - Template</div>
+        <div class="card-body">
+          <form
+            class="needs-validation"
+            novalidate
+            autocomplete="off"
+           
+          >
+            <div class="mb-3">
+              <label for="inputNombre">Nombre</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputNombre"
+               
+              />
+              <div class="invalid-feedback" >
+                <small>El nombre es requerido</small>
+              </div>
+              <div class="invalid-feedback" >
+                <small
+                  >El nombre tiene que tener al menos x caracteres</small
+                >
+              </div>
+            </div>
+  
+            <div class="mb-3">
+              <label for="imputEmail">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="imputEmail"
+                
+                name="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                required
+                
+              />
+              <div class="invalid-feedback" >
+                <small>El email es requerido</small>
+              </div>
+              <div class="invalid-feedback" >
+                <small>El nombre tiene que tener un formato válido</small>
+              </div>
+            </div>
+  
+            <div class="mb-3">
+              <label>Provincia</label>
+              <select
+                name="provincia"
+                
+                required
+              
+                class="form-control"
+                id="exampleFormControlSelect1"
+              >
+                <option value="0">Seleccione una provincia</option>
+                
+              </select>
+            </div>
+  
+            <div class="mb-3">
+              <label>Localidad</label>
+              <select
+                name="localidad"
+                
+                class="form-control"
+               
+              >
+                <option value="0">Seleccione una localidad</option>
+              
+              </select>
+            </div>
+  
+            <div class="mb-3">
+              <label>Género</label>
+              <br />
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="genero"
+                 
+                  id="inlineRadio1"
+                  value="M"
+                 
+                />
+                <label class="form-check-label" for="inlineRadio1"
+                  >Masculino</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="genero"
+                  
+                  id="inlineRadio2"
+                  value="F"
+                 
+                />
+                <label class="form-check-label" for="inlineRadio2"
+                  >Femenino</label
+                >
+              </div>
+            
+            </div>
+            
+  
+            <div class="mb-3 form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="recuerdame"
+              
+                name="recuerdame"
+              />
+              <label class="form-check-label" for="recuerdame">Recuerdame</label>
+            </div>
+  
+            <!-- [disabled]="formulario.invalid" -->
+  
+            <button type="submit" class="btn btn-primary">Validar</button>
+          </form>
+  
+          Estado de la validación del formulario: true
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>

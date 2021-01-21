@@ -1,0 +1,212 @@
+<div class="animate__animated animate__fadeIn animate__fast">
+    <div class="row mt-3">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header">Formularios Reactivos</div>
+  
+          <div class="card-body">
+            <form >
+              <div class="mb-2 row">
+                <label class="col-md-4 col-form-label">Nombre</label>
+                <div class="col-md-8">
+                  <input
+                    type="text"
+                    class="form-control"
+                   
+                    placeholder="Nombre"
+                    formControlName="nombre"
+                  />
+                  <small class="text-danger" >
+                    Error en campo nombre
+                  </small>
+                  <div
+                   
+                    class="invalid-feedback"
+                  >
+                    El nombre es necesario.
+                  </div>
+                  <div
+                   
+                    class="invalid-feedback"
+                  >
+                    Por lo menos X caracteres.
+                  </div>
+                </div>
+              </div>
+  
+              <div class="mb-2 row">
+                <label class="col-md-4 col-form-label">Apellido</label>
+                <div class="col-md-8">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Apellidos"
+                    
+                    
+                  />
+                  <small class="text-danger" >
+                    Error en campo apellido
+                  </small>
+                </div>
+              </div>
+  
+              <div class="mb-2 row">
+                <label class="col-md-4 col-form-label">email</label>
+                <div class="col-md-8">
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    class="form-control"
+                    
+                  />
+                  <small class="text-danger" >
+                    Error en el correo
+                  </small>
+                </div>
+              </div>
+  
+              <div class="mb-2 row">
+                <label class="col-md-4 col-form-label">Usuario</label>
+                <div class="col-md-8">
+                  <input
+                    type="text"
+                    placeholder="Introduce el nombre de usuario"
+                    class="form-control"
+                    
+                  />
+  
+                  <small class="text-danger" >
+                    Usuario ya usado
+                  </small>
+                
+                </div>
+              </div>
+  
+  
+  
+              <div class="mb-2 row" >
+                  <label class="col-4 col-form-label">Dirección</label>
+                  <div class="form-row col">
+  
+                      <div class="mb-1 col">
+                          <input 
+                              type="text" 
+                              class="form-control"
+                              placeholder="provincia"
+                             
+                              />
+                              <small class="text-danger" >
+                                  Es necesaria la provincia
+                               </small>
+  
+                          
+                      </div>
+  
+                      <div class="col">
+                          <input 
+                              type="text" 
+                              class="form-control"
+                              placeholder="localidad"
+                            />
+                              <small class="text-danger" >
+                                 Es necesaria la localidad
+                              </small>
+                          
+                      </div>
+                   
+                  </div>
+                </div>
+  
+                
+  
+  
+  
+              <div class="mb-2 row">
+                <label class="col-md-4 col-form-label">Password</label>
+                <div class="col-md-8">
+                  <input
+                    type="password"
+                    placeholder="contraseña"
+                    class="form-control"
+                    >
+                    
+                  
+                  <small class="text-danger" >
+                    La contraseña es obligatoria
+                 </small>
+                </div>
+              </div>
+  
+              <div class="mb-2 row">
+                <label class="col-md-4 col-form-label">Repite Password</label>
+                <div class="col-md-8">
+                  <input
+                    type="password"
+                    placeholder="repite la contraseña"
+                    class="form-control"
+                   />
+                    <small class="text-danger" >
+                      La contraseña es obligatoria y tiene que ser la misma que el password
+                   </small>
+                </div>
+              </div>
+  
+  
+              <div class="mb-2 row" >
+                  <label class="col-4 col-form-label">Lenguajes</label>
+                  <div class="col">
+                      <table class="table">
+                          <thead class="thead-dark">
+                              <tr>
+                                  <th>id</th>
+                                  <th>Lenguaje</th>
+                                  <th>Borrar</th>
+                              </tr>
+                          </thead>
+                          <tbody formArrayName="lenguajes">
+                              <tr>
+                                  <td>indice </td>
+                                  <td>
+                                      <input class="form-control" type="text"
+                                      >
+                                  </td>
+                                  <td>
+                                      <button
+                                      type="button"
+                                     
+                                      class="btn btn-danger btn-sm">Borrar</button>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                      <button type="button"
+                    
+                      class="btn btn-primary mt-3">+ Agregar</button>
+                  </div>
+              </div>
+  
+              <div class="mb-2 row">
+                <label class="col-2 col-form-label">&nbsp;</label>
+                <div class="input-group col-md-8">
+                  <button type="submit" class="btn btn-outline-primary">
+                    Validar
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <hr />
+  <pre>
+      Estado del formulario: true
+      <br>
+      Status: status
+  </pre>
+  <pre>
+      formulario.value | json 
+  </pre>
+  
