@@ -57,12 +57,10 @@ https://git-scm.com/
 6.	Formularios en angular
 7.	Aplicación CRUD con peticiones a un backend.
 8.	Preparar aplicación para producción.
-
 9.	Optimización de aplicación. Módulos y Lazy Load.
 10. Interceptores
 
 
-Estos dos últimos puntos no forman parte del contenido del curso pero igualmente haremos un ejercicio por cada uno de esos puntos. De la misma forma tendrán todo el código disponible para su consulta.
 
 
 ![Jccm](img/logoJccm.png)

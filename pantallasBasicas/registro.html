@@ -1,0 +1,79 @@
+<div class="animate__animated animate__fadeIn animate__fast">
+    <div class="row mt-3">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header">Registro de usuarios</div>
+          <div class="card-body">
+            <h5 class="card-title">Alta de usuarios</h5>
+    
+            <form
+            
+            >
+              <div class="mb-3">
+                <label for="nombre">Nombre</label>
+                <input
+                  type="text"
+                  id="nombre"
+                  placeholder="escribe tu nombre"
+                  class="form-control"
+                 
+                  minlength="5"
+                  required
+               
+                />
+                <small id="nombre" class="form-text text-muted"
+                  >Tiene que tener al menos 5 letras</small
+                >
+              </div>
+    
+              <div class="mb-3">
+                <label for="email">Email</label>
+                <input
+                  type="text"
+                  placeholder="email"
+                  id="email"
+                  class="form-control"
+                  name="email"
+                 
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                />
+              </div>
+    
+              <div class="mb-3">
+                <label for="password1">Password</label>
+                <input
+                  type="password"
+                  id="password1"
+                  class="form-control"
+                  name="password1"
+                 
+                />
+              </div>
+    
+              <div class="mb-3">
+                <label for="password2">Repite el Password</label>
+                <input
+                  type="password"
+                  id="password2"
+                  class="form-control"
+                  name="password2"
+                 
+                />
+              </div>
+    
+              <button
+                [disabled]="!formulario.valid || grabando"
+                type="submit"
+                class="btn btn-primary"
+              >
+                <i [ngClass]="{'fas fa-sync fa-spin': grabando}"></i>
+                Registrar
+              </button>
+            </form>
+    
+             formulario.valid  - grabando:  grabando 
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>

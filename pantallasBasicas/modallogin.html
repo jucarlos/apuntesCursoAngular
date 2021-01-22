@@ -1,0 +1,64 @@
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login de Usuarios</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email</label>
+          <input
+            name="email"
+           
+            type="email"
+            class="form-control"
+            required
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input
+            type="password"
+            name="password"
+           
+            required
+            class="form-control"
+            id="exampleInputPassword1"
+          />
+        </div>
+        <div class="form-group form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            name="recordar"
+            [(ngModel)]="recuerdame"
+            id="exampleCheck1"
+          />
+          <label class="form-check-label"
+               for="exampleCheck1">Recuérdame</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Cerrar
+        </button>
+        <button type="button" data-bs-dismiss="modal"
+            (click)="entrar()" class="btn btn-primary">Entrar</button>
+      </div>
+    </div>
+  </div>
+</div>
