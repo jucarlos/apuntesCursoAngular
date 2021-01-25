@@ -23,11 +23,11 @@ En determinados momentos podríamos utilizar google meet.
 https://github.com/jucarlos/apuntesCursoAngular ,
 
 
-* Acceso para descargar el software que se utilizará.
+* Acceso a internet para descargar el software que utilizaremos.
 
 ### Software que utilizaremos para el desarrollo de los ejercicios del curso
 
-Este el el software que se utilizará en el curso. Hace falta tener permisos de administración para su instalación.
+Este el software que se utilizará en el curso. Hace falta tener permisos de administración para su instalación.
 
 * Visual Studio Code. https://code.visualstudio.com/
 Será el editor de código que vamos a utilizar durante todos los ejercicio.
