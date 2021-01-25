@@ -64,7 +64,7 @@ https://git-scm.com/
 
 [1. Guía de arquitectura y buenas prácticas front-end](docJccm/arquitecturaBuenasPracticasJCCM_v1.3.md)
 
-[2. Guía de arquitectura y buenas prácticas front-end](docJccm/generarodAppsJCCMv2.3.md)
+[2. Guía de uso del generador de aplicaciones Angular](docJccm/generarodAppsJCCMv2.3.md)
 
 
 
