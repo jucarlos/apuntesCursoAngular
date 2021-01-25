@@ -62,7 +62,7 @@ https://git-scm.com/
 
 [Acceso al documento con todo el trabajo que haremos en el curso](documentacion/cursoAngular.pdf) - **Documento PDF**
 
-#### Además del contenido del curso hablaremos  veremos estos temas sobre desarrollo de aplicaciones con Angular emitido por el equipo de modernización de la Dirección General de Administración Digital.
+#### Además del contenido del curso veremos estas guias de desarrollo de aplicaciones con Angular emitido por el equipo de modernización de la Dirección General de Administración Digital.
 
 [1. Guía de arquitectura y buenas prácticas front-end](docJccm/arquitecturaBuenasPracticasJCCM_v1.3.md)
 
