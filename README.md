@@ -60,6 +60,12 @@ https://git-scm.com/
 9.	Optimización de aplicación. Módulos y Lazy Load.
 10. Interceptores
 
+#### Además del contenido del curso hablaremos  veremos estos temas sobre desarrollo de aplicaciones con Angular emitido por el equipo de modernización de la Dirección General de Administración Digigtal.
+
+[1. Guía de arquitectura y buenas prácticas front-end](docJccm/arquitecturaBuenasPracticasJCCM_v1.3.md)
+
+[2. Guía de arquitectura y buenas prácticas front-end](docJccm/generarodAppsJCCMv2.3.md)
+
 
 
 
