@@ -1,0 +1,93 @@
+<div class="row">
+    <div class="card">
+        <h3 class="card-header">Formulario en el Html</h3>
+        <div class="card-body">
+
+            <form novalidate="" #f="ngForm" (ngSubmit)="validar(f)">
+                <div class="form-group">
+                    <label for="inputNombre">Nombre</label>
+                    <input type="text" 
+                            [ngClass]="
+                            { 'is-invalid' : nombre.invalid && nombre.touched,
+                              'is-valid' : nombre.valid }"
+                            class="form-control" id="inputNombre" 
+                            name="nombre"
+                            [ngModel]="persona.nombre"
+                            required
+                            minlength="3"
+                            #nombre="ngModel">
+                    <div class="invalid-feedback" *ngIf="nombre.errors?.required">
+                      El nombre es requerido
+                    </div>
+                    <div class="invalid-feedback" *ngIf="nombre.errors?.minlength">
+                      El nombre tiene que tener al menos 3 caracteres
+                    </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="imputEmail">Email</label>
+                  <input type="email" 
+                  [ngClass]="
+                  { 'is-invalid' : email.invalid && email.touched,
+                    'is-valid' : email.valid }"
+                  class="form-control" id="imputEmail" 
+                  name="email"
+                  [ngModel]="persona.email"
+                  required
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                  #email="ngModel"
+                  >
+                  
+                  <div class="invalid-feedback" *ngIf="email.errors?.required">
+                    El email es requerido
+                  </div>
+                  <div class="invalid-feedback" *ngIf="email.errors?.pattern">
+                    El nombre tiene que tener un formato válido
+                  </div>
+                </div>
+
+
+                <div class="form-group">
+                  <label >Provincia</label>
+                  <select 
+                  name="provincia"
+                  (change)="cambiaProvincia( $event.target.value)"
+                  [(ngModel)]="persona.provincia"
+                  class="form-control" id="exampleFormControlSelect1">
+                    <option value="0">Seleccione una provincia</option>
+                    <option *ngFor="let pro of provincias" [value]="pro.codigo">{{ pro.nombre }}</option>
+                    
+                  </select>
+                </div>
+
+
+                <div class="form-group">
+                  <label >Localidad</label>
+                  <select 
+                  name="localidad"
+                  [(ngModel)]="persona.localidad"
+                  class="form-control">
+                    <option value="0">Seleccione una localidad</option>
+                    <option *ngFor="let lo of localidadesFiltro" [value]="lo.codigo">{{ lo.nombre }}</option>
+                  </select>
+                </div>
+               
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="recuerdame"
+                    name="recuerdame" ngModel>
+                  <label class="form-check-label" for="recuerdame">Recuerdame</label>
+                </div>
+                <button 
+                [disabled]="!f.valid"
+                type="submit" class="btn btn-primary">Validar</button>
+              </form>
+
+
+        </div>
+        
+    </div>
+</div>
+
+<pre>
+  Formulario válido: {{ f.valid }}
+</pre>
