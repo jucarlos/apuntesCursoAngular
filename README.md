@@ -60,7 +60,7 @@ https://git-scm.com/
 9.	Optimización de aplicación. Módulos y Lazy Load.
 10. Interceptores
 
-[Acceso al documento con todo el trabajo que haremos en el curso](documentacion/cursoAngular.pdf) - **Documento PDF**
+[Acceso al documento con todo el trabajo que haremos en el curso](documentacion/cursoangular.pdf) - **Documento PDF**
 
 #### Además del contenido del curso veremos estas guias de desarrollo de aplicaciones con Angular emitido por el equipo de modernización de la Dirección General de Administración Digital.
 
